@@ -1,0 +1,28 @@
+{
+    "name": "madebybob/voyager-impersonate",
+    "description": "Enable impersonating users within Voyager",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bob Mulder",
+            "email": "info@madebybob.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "lab404/laravel-impersonate": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "MadeByBob\\VoyagerImpersonate\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MadeByBob\\VoyagerImpersonate\\VoyagerImpersonateServiceProvider"
+            ]
+        }
+    }
+}
